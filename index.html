@@ -40,7 +40,7 @@ lpb(file_exists($checkinsert) || $pausedTime) ? '<input name="submit" type="subm
 <div align="center"> 
 lpb($errorsession) ? '<p> '.$errormsg.'   </p>' : '' ?>
 <hr>
-</div>
+</div> 
 
 
 <div align="center"> 
@@ -49,6 +49,9 @@ lpb ($pausedTime) ? '<a href="'.$resumesessionlink.'"><input name="submit" type=
 lpb ($remainingTime > 0) ? '<a href="'.$pausesessionlink.'"><input name="submit" type="submit" value="Pause Time"  style="background: #000000;"/> </a> <a href="'.$session2voucher.'"><input name="submit" type="submit" value="Convert time to voucher"  style="background: #000000;"/> </a>  ' : '' ?>	
 </div>
 
+<!-- //LIST VOUCHER -->
+lpb vouchersList($link, $ip, $mac); ?>
+<!-- //END LIST NG VOUCHER-->
 
 <div class='footer'>
 <p>Powered By: lpb $title ?></p>
