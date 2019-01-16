@@ -1,4 +1,4 @@
-# LPB-Piso-Wifi-Portal-2-Template
+# LPB-Piso-Wifi-Portal-3-Template Lite
 Site: http://lpbpisowifi.com 
 Group: https://www.facebook.com/groups/290641141598182/
 ------
