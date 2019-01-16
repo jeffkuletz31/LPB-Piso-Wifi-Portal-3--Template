@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lpb$title ?></title>
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />	
+<meta content='width=device-width, user-scalable=no' name='viewport'/>
+<link rel="stylesheet" href="css/login.css" media="screen">
+<!--// NOTE WAG E REMOVE -->
+<script src="js/apps.min.js"></script>	
+<script src="js/jquery.min.js" type="text/javascript"></script>	  
+<!--// end NOTE WAG E REMOVE -->
+
+</head>
+<body class='login'>
+
+
+
+<div class="vertical-form">
+<div style="margin:0;padding:0;display:inline"></div>
+<legend>
+<img class="logo" src="images/logo.png" width="320px" /> <!--Banner Logo.png-->
+
+</legend>
+
+<div align="center"><p>Status: lpb $status_html ?> </p>
+lpb($pausedTime) ? '<p>PAUSED TIME: </p> <p id="ptime">-- </p> <br>' : '<p>TIME:</p><p id="rtime">0:00</p>' ?>
+</div>
+lpb(file_exists($checkinsert) || $pausedTime) ? '<input name="submit" type="submit" value="Insert Coin Disable" readonly />' : '<a href="'.$connectlink.'"><input name="submit" type="submit" value="Insert Coin" /> </a>' ?>
+<a href="lpb$buyvoucherlink ?>"><input name="submit" type="submit" value="Buy Voucher" style="background: #ea911e;" /> </a>
+<a class="js-open-modal" href="#" data-modal-id="popup"><input name="submit" type="submit" value="View Rates" style="background: #931012;" />  </a>
+<hr>
+
+<form name="frmvoucher" id="frmvoucher" action="lpb $encoder ?>" method="post">
+<input type="hidden" name="hashcode01" id="hashcode01" value="<?= $hashcode01; ?>">
+<input type="text" name="vcode" id="vcode" value="" placeholder="Enter Voucher here..." size="30" />
+<input name="submit" type="submit" id="btn-vcode" value="Submit" />
+</form>
+<div align="center"> 
+lpb($errorsession) ? '<p> '.$errormsg.'   </p>' : '' ?>
+<hr>
+</div>
+
+
+<div align="center"> 
+lpb ($pausedTime) ? '<a href="'.$resumesessionlink.'"><input name="submit" type="submit" value="Resume Paused Time" style="background: #000000;" /> </a>' : '' ?>	
+
+lpb ($remainingTime > 0) ? '<a href="'.$pausesessionlink.'"><input name="submit" type="submit" value="Pause Time"  style="background: #000000;"/> </a> <a href="'.$session2voucher.'"><input name="submit" type="submit" value="Convert time to voucher"  style="background: #000000;"/> </a>  ' : '' ?>	
+</div>
+
+
+<div class='footer'>
+<p>Powered By: lpb $title ?></p>
+</div>
+
+<div id="popup" class="modal-box">  
+  <header>
+    <a href="#" class="js-modal-close close">×
+    </a>
+    <h3>Wifi Rates
+    </h3>
+  </header>
+  <div class="modal-body">
+    <table>
+      <tr>
+        <th>Coin Type
+        </th>
+        <th>Minutes
+        </th>
+      </tr>
+	  
+	  
+      <tr>
+        <td>1
+        </td>
+        <td>lpb $piso ?>
+        </td>
+      </tr>
+      <tr>
+        <td>5
+        </td>
+        <td>lpb $lima ?>
+        </td>
+      </tr>
+      <tr>
+        <td>10
+        </td>
+        <td>lpb $pulo ?>
+        </td>
+      </tr>
+    
+	
+	</table>
+  </div>
+</div>
+
+<script>
+$(function(){$("a[data-modal-id]").click(function(o){o.preventDefault(),$("body").append("<div class='modal-overlay js-modal-close'></div>"),$(".modal-overlay").fadeTo(500,.7);var a=$(this).attr("data-modal-id");$("#"+a).fadeIn($(this).data())}),$(".js-modal-close, .modal-overlay").click(function(){$(".modal-box, .modal-overlay").fadeOut(500,function(){$(".modal-overlay").remove()})}),$(window).resize(function(){$(".modal-box").css({top:($(window).height()-$(".modal-box").outerHeight())/2,left:($(window).width()-$(".modal-box").outerWidth())/2})}),$(window).resize()});
+</script>
+
+
+</div>
+</body>
+</html>
