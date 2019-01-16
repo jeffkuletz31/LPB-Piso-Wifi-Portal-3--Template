@@ -27,7 +27,7 @@
 <div align="center"><p>Status: lpb $status_html ?> </p>
 lpb($pausedTime) ? '<p>PAUSED TIME: </p> <p id="ptime">-- </p> <br>' : '<p>TIME:</p><p id="rtime">0:00</p>' ?>
 </div>
-lpb(file_exists($checkinsert) || $pausedTime) ? '<input name="submit" type="submit" value="Insert Coin Disable" readonly />' : '<a href="'.$connectlink.'"><input name="submit" type="submit" value="Insert Coin" /> </a>' ?>
+lpb(file_exists($checkinsert) or $pausedTime) ? '<input name="submit" type="submit" value="Insert Coin Disable" readonly />' : '<a href="'.$connectlink.'"><input name="submit" type="submit" value="Insert Coin" /> </a>' ?>
 <a href="lpb$buyvoucherlink ?>"><input name="submit" type="submit" value="Buy Voucher" style="background: #ea911e;" /> </a>
 <a class="js-open-modal" href="#" data-modal-id="popup"><input name="submit" type="submit" value="View Rates" style="background: #931012;" />  </a>
 <hr>
