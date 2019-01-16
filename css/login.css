@@ -9,7 +9,38 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
+.panel {
+    border: 0 solid transparent!important;
+    border-radius: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    text-align: left;
+    z-index: 999;
+}
+.panel-info>.panel-heading {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.text-center {
+    width: 150px;
+}
+.table {
+ background: #7ba800;
+ width: 100%;
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
