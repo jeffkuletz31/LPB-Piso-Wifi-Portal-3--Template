@@ -46,7 +46,7 @@ lpb($errorsession) ? '<p> '.$errormsg.'   </p>' : '' ?>
 <div align="center"> 
 lpb ($pausedTime) ? '<a href="'.$resumesessionlink.'"><input name="submit" type="submit" value="Resume Paused Time" style="background: #000000;" /> </a>' : '' ?>	
 
-lpb ($remainingTime > 0) ? '<a href="'.$pausesessionlink.'"><input name="submit" type="submit" value="Pause Time"  style="background: #000000;"/> </a> <a href="'.$session2voucher.'"><input name="submit" type="submit" value="Convert time to voucher"  style="background: #000000;"/> </a>  ' : '' ?>	
+lpb ($remainingTime > 0 & $xzcas >=1) ? '<a href="'.$pausesessionlink.'"><input name="submit" type="submit" value="Pause Time"  style="background: #000000;"/> </a> <a href="'.$session2voucher.'"><input name="submit" type="submit" value="Convert time to voucher"  style="background: #000000;"/> </a>  ' : '' ?>	
 </div>
 
 <!-- //LIST VOUCHER -->
